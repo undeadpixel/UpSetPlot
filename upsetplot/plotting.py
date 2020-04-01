@@ -491,7 +491,7 @@ class UpSet:
         else:
             pct_fmt = self._show_percentages
 
-        total = sum(self.totals)
+        total = sum(self.intersections)
         if count_fmt and pct_fmt:
             if where == 'top':
                 fmt = '%s\n(%s)' % (count_fmt, pct_fmt)
